@@ -1,1 +1,0 @@
-![Levit8Sport](https://www.stepintoswift.com/levit8sport.github.io/images/levit8sport-logo.png)

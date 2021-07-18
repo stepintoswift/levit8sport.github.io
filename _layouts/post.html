@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-    <!-- <link rel="icon" href="assets/favicon.ico" type="image/x-icon"> -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
 
     <!--[if lt IE 9]>
@@ -16,30 +16,31 @@
 {% seo %}
   </head>
 
-  <body>
-
-
+  <body class="post">
     <header class="feature-image">
       <div class="inner">
-        <h1>CHANGE IS COMING...</h1>
-        <p><img src="/assets/images/levit8sport-logo.png" /></p>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.description }}</h2>
       </div>
     </header>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
+
         <section id="main-content">
           {{ content }}
         </section>
 
+        <aside id="sidebar">
+
+          {% include sidebar-menu.html %}
+
+        <aside>
+
       </div>
     </div>
 
-    <footer class="feature-image">
-      <div class="inner">
-        <h1>The platform for the PLAYERS, for the FANS, for the CLUBS!</h1>
-      </div>
-    </footer>
+    <footer class="feature-image"></footer>
 
     {% if site.google_analytics %}
       <script>

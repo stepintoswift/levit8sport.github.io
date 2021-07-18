@@ -1,0 +1,8 @@
+<ul class="sidebar-menu">
+  <li><a href="{{ '/' | absolute_url }}">Home</a></li>
+
+    {% assign pages = site.posts | sort: 'sortOrder' %}
+    {% for page in pages %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
